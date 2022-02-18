@@ -21,9 +21,7 @@ while True:
     print(f"You have £{coins}")
     try:
         gamble = int(input("How much do you want to gamble?\n"))
-        if gamble > coins:
-            print("Invalid Bet")
-        elif gamble <= 0:
+        if gamble > coins or gamble <= 0:
             print("Invalid Bet")
         else:
             chance = random.randint(1,2)
